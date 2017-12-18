@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+    
+    <!-- Common application settings-->
+    <CommonApplicationSettings>
+        
+        <!-- Hotel logo displayed at top of Application -->
+        <HotelLogo>Logo</HotelLogo>
+        
+        <!-- Hotel name -->
+        <HotelName>HotelName</HotelName>
+        
+        <!-- Hotel facebook page -->
+        <Facebook>https://www.facebook.com/</Facebook>
+        
+        <!-- Hotel google+ page -->
+        <GooglePlus>https://plus.google.com/</GooglePlus>
+        
+        <!-- Hotel twitter page -->
+        <Twitter>https://twitter.com/</Twitter>
+        
+        <TripAdvisor>http://www.tripadvisor.com/Hotel_Review-g198832-d236315-Reviews-Grand_Hotel_Kronenhof-Pontresina_Engadin_St_Moritz_Graubunden_Swiss_Alps.html</TripAdvisor>
+        
+    </CommonApplicationSettings>
+
+    <!-- Main page settings-->
+    <MainPageSettings>
+        
+        <!-- List of Photos with Description to show on main screen ViewPager -->
+        <HotelPreviewPictures>
+        
+            <PreviewPicture>
+                
+                <!-- Photo to display in ViewPager -->
+                <Picture>cf</Picture>
+                
+                <!-- Short Description for the displayed photo -->
+                <PictureDescription>Conference Room Local</PictureDescription>
+                
+            </PreviewPicture>
+            
+            <PreviewPicture>
+                
+                <!-- Photo to display in ViewPager -->
+                <Picture>rest</Picture>
+                
+                <!-- Short Description for the displayed photo -->
+                <PictureDescription>Restaurant</PictureDescription>
+                
+            </PreviewPicture>
+            
+            <PreviewPicture>
+                
+                <!-- Photo to display in ViewPager -->
+                <Picture>room</Picture>
+                
+                <!-- Short Description for the displayed photo -->
+                <PictureDescription>Room</PictureDescription>
+                
+            </PreviewPicture>
+            
+            <PreviewPicture>
+                
+                <!-- Photo to display in ViewPager -->
+                <Picture>pool</Picture>
+                
+                <!-- Short Description for the displayed photo -->
+                <PictureDescription>Swimming Pool</PictureDescription>
+                
+            </PreviewPicture>
+            
+        </HotelPreviewPictures>
+        
+	</MainPageSettings>
+    
+    <!-- Reservation page settings-->
+    <ReservationPageSettings>
+        
+        <!-- List of Hotel Contact info for reservation -->
+        <HotelReservationContactList>
+            
+            <HotelReservationContact>
+                
+                <!-- Phone to contact e.g. +00155512345 -->
+                <ContactPhone>+44 111 222 333</ContactPhone>
+                
+                <!-- Email to contact e.g. john@smith.com -->
+                <ContactEmail>n@dhotel.com</ContactEmail>
+                
+                <!-- Short Description for the displayed contact e.g. Reception -->
+                <ContactDescription>Reception</ContactDescription>
+                
+            </HotelReservationContact>
+            
+            <HotelReservationContact>
+                
+                <!-- Phone to contact e.g. +00155512345 -->
+                <ContactPhone>+44 111 222 123</ContactPhone>
+                
+                <!-- Email to contact e.g. john@smith.com -->
+                <ContactEmail>m@dhotel.com</ContactEmail>
+                
+                <!-- Short Description for the displayed contact e.g. Reception -->
+                <ContactDescription>Reception</ContactDescription>
+                
+            </HotelReservationContact>
+            
+            <HotelReservationContact>
+                
+                <!-- Phone to contact e.g. +00155512345 -->
+                <ContactPhone>+44 111 222 321</ContactPhone>
+                
+                <!-- Email to contact e.g. john@smith.com -->
+                <ContactEmail>r@dhotel.com</ContactEmail>
+                
+                <!-- Short Description for the displayed contact e.g. Reception -->
+                <ContactDescription>Reception</ContactDescription>
+                
+            </HotelReservationContact>
+            
+        </HotelReservationContactList>
+        
+        <!-- Online booking webpage address e.g. www.johnsmith.com/book -->
+        <BookOnlinePageUrl></BookOnlinePageUrl>
+
+	</ReservationPageSettings>
+    
+    <!-- Rates screen info -->
+    <RatesPageSettings>
+        
+        <!-- List of rooms with description, rates and preview picture -->
+        <RoomTypesList>
+            
+            <!-- Single room information-->
+            <RoomRateInfo>
+                
+                <!-- General room type used as title e.g. Room 4 People -->
+                <RoomTitle>Single Room</RoomTitle>
+                
+                <!-- Additional info for the room  e.g. Check-In: 14:00 -->
+                <RoomDescription>Check-in: 14:00 / Check-out: 11:00</RoomDescription>
+                
+                <!-- Room picture -->
+                <RoomPicture>single_room</RoomPicture>
+
+                <!-- Room price per night -->
+                <RoomPrice>90,00$</RoomPrice>
+                
+            </RoomRateInfo>
+            
+            <!-- Single room information-->
+            <RoomRateInfo>
+                
+                <!-- General room type used as title e.g. Room 4 People -->
+                <RoomTitle>Double Room</RoomTitle>
+                
+                <!-- Additional info for the room  e.g. Check-In: 14:00 -->
+                <RoomDescription>Check-in: 14:00 / Check-out: 11:00</RoomDescription>
+                
+                <!-- Room picture -->
+                <RoomPicture>double_room</RoomPicture>
+                
+                <!-- Room price per night -->
+                <RoomPrice>190,00$</RoomPrice>
+                
+            </RoomRateInfo>
+            
+            <!-- Single room information-->
+            <RoomRateInfo>
+                
+                <!-- General room type used as title e.g. Room 4 People -->
+                <RoomTitle>Triple Room</RoomTitle>
+                
+                <!-- Additional info for the room  e.g. Check-In: 14:00 -->
+                <RoomDescription>Check-in: 14:00 / Check-out: 11:00</RoomDescription>
+                
+                <!-- Room picture -->
+                <RoomPicture>triple_room</RoomPicture>
+                
+                <!-- Room price per night -->
+                <RoomPrice>290,00$</RoomPrice>
+                
+            </RoomRateInfo>
+            
+            <!-- Single room information-->
+            <RoomRateInfo>
+                
+                <!-- General room type used as title e.g. Room 4 People -->
+                <RoomTitle>Quadruple Room</RoomTitle>
+                
+                <!-- Additional info for the room  e.g. Check-In: 14:00 -->
+                <RoomDescription>Check-in: 14:00 / Check-out: 11:00</RoomDescription>
+                
+                <!-- Room picture -->
+                <RoomPicture>quadruple_room</RoomPicture>
+                
+                <!-- Room price per night -->
+                <RoomPrice>390,00$</RoomPrice>
+                
+            </RoomRateInfo>
+        
+        </RoomTypesList>
+        
+    </RatesPageSettings>
+    
+    <!-- Gallery screen info -->
+    <GalleryPageSettings>
+        
+        <!-- List of Pictures with Title -->
+        <GalleryPictureList>
+            
+            <GalleryPictureItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>reception</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Reception</RoomTitle>
+                
+            </GalleryPictureItem>
+            
+            <GalleryPictureItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>lobby</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Lobby Bar</RoomTitle>
+                
+            </GalleryPictureItem>
+            
+            
+            <GalleryPictureItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>cf</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Conference Hall</RoomTitle>
+                
+            </GalleryPictureItem>
+            
+            <GalleryPictureItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>rest</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Restaurant</RoomTitle>
+                
+            </GalleryPictureItem>
+
+            <GalleryPictureItem>
+    
+                <!-- Room picture -->
+                <RoomPicture>room</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Room</RoomTitle>
+    
+            </GalleryPictureItem>
+            
+            <GalleryPictureItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>pool</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Swimming pool</RoomTitle>
+                
+            </GalleryPictureItem>
+            
+            <GalleryPictureItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>spa</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>SPA Center</RoomTitle>
+                
+            </GalleryPictureItem>
+            
+            <GalleryPictureItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>fitness</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Fitness Center</RoomTitle>
+                
+            </GalleryPictureItem>
+            
+            <GalleryPictureItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>club</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Night Club</RoomTitle>
+                
+            </GalleryPictureItem>
+
+        </GalleryPictureList>
+        
+    </GalleryPageSettings>
+
+    <!-- Rooms screen info -->
+    <RoomsPageSettings>
+    
+        <!-- List of the type of rooms in the Hotel -->
+        <RoomsList>
+            
+            <!-- Single room description -->
+            <RoomItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>single_room</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Single Room</RoomTitle>
+                
+                <!-- Room description -->
+                <RoomDescription>Double bed, TV, AC, Wi-Fi, Minibar</RoomDescription>
+                
+            </RoomItem>
+            
+            <!-- Double room description -->
+            <RoomItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>double_room</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Double Room</RoomTitle>
+                
+                <!-- Room description -->
+                <RoomDescription>Double bed, TV, AC, Wi-Fi, Minibar</RoomDescription>
+                
+            </RoomItem>
+            
+            <!-- Triple room description -->
+            <RoomItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>triple_room</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Triple Room</RoomTitle>
+                
+                <!-- Room description -->
+                <RoomDescription>Double bed, Single beds, TV, AC, Wi-Fi, Minibar</RoomDescription>
+                
+            </RoomItem>
+            
+            <!-- Quadruple room description -->
+            <RoomItem>
+                
+                <!-- Room picture -->
+                <RoomPicture>quadruple_room</RoomPicture>
+                
+                <!-- Room title -->
+                <RoomTitle>Quadruple Room</RoomTitle>
+                
+                <!-- Room description -->
+                <RoomDescription>Four single beds, TV, AC, Wi-Fi, Minibar</RoomDescription>
+                
+            </RoomItem>
+
+        </RoomsList>
+    
+    </RoomsPageSettings>
+
+    <!-- Facilities Screen info -->
+    <FacilitiesPageSettings>
+        
+        <!-- List of Facilities available at the Hotel -->
+        <HotelFacilitiesList>
+            
+            <!-- Facility at the hotel e.g. Parking -->
+            <FacilityItem>
+                
+                <FacilityItemDescription>Reception</FacilityItemDescription>
+                
+            </FacilityItem>
+            
+            <!-- Facility at the hotel e.g. Parking -->
+            <FacilityItem>
+                
+                <FacilityItemDescription>AC, Wi-Fi, Fridge, Minibar</FacilityItemDescription>
+                
+            </FacilityItem>
+            
+            <!-- Facility at the hotel e.g. Parking -->
+            <FacilityItem>
+                
+                <FacilityItemDescription>Lobby Bar</FacilityItemDescription>
+                
+            </FacilityItem>
+            
+            <!-- Facility at the hotel e.g. Parking -->
+            <FacilityItem>
+                
+                <FacilityItemDescription>Traditional Restaurant</FacilityItemDescription>
+                
+            </FacilityItem>
+            
+            <!-- Facility at the hotel e.g. Parking -->
+            <FacilityItem>
+                
+                <FacilityItemDescription>Swimming Pool (indoor)</FacilityItemDescription>
+                
+            </FacilityItem>
+            
+            <!-- Facility at the hotel e.g. Parking -->
+            <FacilityItem>
+                
+                <FacilityItemDescription>Night Club</FacilityItemDescription>
+                
+            </FacilityItem>
+            
+            <!-- Facility at the hotel e.g. Parking -->
+            <FacilityItem>
+                
+                <FacilityItemDescription>SPA Center and Fitness</FacilityItemDescription>
+                
+            </FacilityItem>
+            
+            <!-- Facility at the hotel e.g. Parking -->
+            <FacilityItem>
+                
+                <FacilityItemDescription>Parking and Rent-a-Car</FacilityItemDescription>
+                
+            </FacilityItem>
+            
+            <!-- Facility at the hotel e.g. Parking -->
+            <FacilityItem>
+                
+                <FacilityItemDescription>Laundrey Service</FacilityItemDescription>
+                
+            </FacilityItem>
+            
+            <!-- Facility at the hotel e.g. Parking -->
+            <FacilityItem>
+                
+                <FacilityItemDescription>Money Exchange, Taxi Service</FacilityItemDescription>
+                
+            </FacilityItem>
+            
+            <!-- Facility at the hotel e.g. Parking -->
+            <FacilityItem>
+                
+                <FacilityItemDescription>and many more...</FacilityItemDescription>
+                
+            </FacilityItem>
+            
+        </HotelFacilitiesList>
+        
+    </FacilitiesPageSettings>
+    
+    <!-- Locations Screen info -->
+    <LocationPageSettings>
+        
+        <!-- Main Hotel location and phone -->
+        <MainHotelItem>
+            
+            <!-- Hotel GPS Coordinates -->
+            <HotelLocation>
+                
+                <HotelLocationLatitude>51.5211969</HotelLocationLatitude>
+                
+                <HotelLocationLongtitude>-0.1575299</HotelLocationLongtitude>
+                
+            </HotelLocation>
+            
+            <HotelStreet>111 Baker St.</HotelStreet>
+            <HotelAddress>London W1U 6SG, UK</HotelAddress>
+            
+            <!-- Hotel Phone -->
+            <HotelPhone>111 Baker St. </HotelPhone>
+            
+            <!-- Hotel Phone Description -->
+            <HotelPhoneDescription>HotelPhoneDescription</HotelPhoneDescription>
+            
+        </MainHotelItem>
+        
+        <!-- List of Other Locations of this Hotel brand -->
+        <LocationsList>
+            
+            <!-- Hotel location and phone -->
+            <HotelItem>
+                
+                <!-- Hotel GPS Coordinates -->
+                <HotelLocation>
+                    
+                    <HotelLocationLatitude>HotelLocationLatitude</HotelLocationLatitude>
+                
+               		<HotelLocationLongtitude>HotelLocationLongtitude</HotelLocationLongtitude>
+               		
+                </HotelLocation>
+                
+                <!-- Hotel Hotel Phone -->
+                <HotelPhone>HotelPhone</HotelPhone>
+                
+            </HotelItem>
+            
+            <!-- Hotel location and phone -->
+            <HotelItem>
+                
+                <!-- Hotel GPS Coordinates -->
+                <HotelLocation>
+                    
+                    <HotelLocationLatitude>HotelLocationLatitude</HotelLocationLatitude>
+                
+               		<HotelLocationLongtitude>HotelLocationLongtitude</HotelLocationLongtitude>
+               		
+                </HotelLocation>
+                
+                <!-- Hotel Phone -->
+                <HotelPhone>HotelPhone</HotelPhone>
+                
+            </HotelItem>
+            
+            <!-- Hotel location and phone -->
+            <HotelItem>
+                
+                <!-- Hotel GPS Coordinates -->
+                <HotelLocation>
+                    
+                    <HotelLocationLatitude>HotelLocationLatitude</HotelLocationLatitude>
+                
+               		<HotelLocationLongtitude>HotelLocationLongtitude</HotelLocationLongtitude>
+               		
+                </HotelLocation>
+                
+                <!-- Hotel Phone -->
+                <HotelPhone>HotelPhone</HotelPhone>
+                
+            </HotelItem>
+            
+        </LocationsList>
+        
+    </LocationPageSettings>
+
+</Settings>

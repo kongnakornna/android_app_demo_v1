@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/roomsListItemImageView"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/roomsListTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/roomsListItemImageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/roomsListItemImageView"
+        android:textColor="@color/main_brown"
+        android:textSize="@dimen/rooms_title" />
+
+    <TextView
+        android:id="@+id/roomsListDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomsListTitleTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/roomsListItemImageView"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/rooms_desc" />
+
+    <Button
+        android:id="@+id/roomsListAvailabilityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@id/roomsListItemImageView"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/roomsListItemImageView"
+        android:background="@drawable/green_rounded_background"
+        android:gravity="center"
+        android:text="@string/check_availability"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

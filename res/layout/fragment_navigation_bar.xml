@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/main_brown" >
+
+    <ImageView
+        android:id="@+id/navigationBarMenu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/action_bar_sliding_menu" />
+
+    <ImageView
+        android:id="@+id/navigationBarEmail"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/action_bar_email" />
+
+    <ImageView
+        android:id="@+id/navigationBarLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:layout_toLeftOf="@id/navigationBarEmail"
+        android:layout_toRightOf="@id/navigationBarMenu" />
+
+    <TextView
+        android:id="@+id/navigationBarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:layout_toLeftOf="@id/navigationBarEmail"
+        android:layout_toRightOf="@id/navigationBarMenu"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

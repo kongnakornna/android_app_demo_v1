@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HotelApp</string>
+    <string name="home">Home</string>
+    <string name="reservation">Reservation</string>
+    <string name="rates">Rates</string>
+    <string name="gallery">Gallery</string>
+    <string name="location">Location</string>
+    <string name="facilities">Facilities</string>
+    <string name="rooms">Rooms</string>
+    <string name="send_email">Send Email</string>
+    <string name="check_availability">Check Availability</string>
+    <string name="book_online">Book Now</string>
+    <string name="book_online_no_address">Book Online URL is not correct</string>
+    <string name="toast_could_not_dial">Cannot dial</string>
+    <string name="cancel">Cancel</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="no_email_clients">There are no email clients installed.</string>
+    <string name="btn_open_map">Open in Maps</string>
+    <string name="install_maps">Please install Google Maps App</string>
+    <string name="no_internet_connectivity">No internet connectivity</string>
+    <string name="rooms_res">Room(s)</string>
+    <string name="adults">Adult(s)</string>
+    <string name="children">Kid(s)</string>
+    <string name="check_in">Check-In</string>
+    <string name="check_out">Check-Out</string>
+    <string name="arrival_departure">Arrival/Departure:</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="occupation">Occupation:</string>
+    <string name="nights">" Night(s)"</string>
+    <string name="rooms_label">" Rooms, "</string>
+    <string name="adults_label">" Adults, "</string>
+    <string name="children_label">" Kids"</string>
+    <string name="personal_information">Personal Information:</string>
+    
+     
+    
+</resources>

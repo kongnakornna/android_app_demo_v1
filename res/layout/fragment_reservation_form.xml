@@ -1,0 +1,213 @@
+
+<!-- The main content view -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/arrival_departure"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/checkIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/reservation_calendar_field"
+            android:focusable="false"
+            android:hint="@string/check_in"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/checkOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/reservation_calendar_field"
+            android:focusable="false"
+            android:hint="@string/check_out"
+            android:inputType="date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/nightsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nights"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/occupation"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <Spinner
+                android:id="@+id/rooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/reservation_dropdown_field"
+                android:entries="@array/rooms_count"
+                android:prompt="@string/rooms_res" />
+
+            <Spinner
+                android:id="@+id/adults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/reservation_dropdown_field"
+                android:entries="@array/adults_count"
+                android:prompt="@string/adults" />
+
+            <Spinner
+                android:id="@+id/children"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/reservation_dropdown_field"
+                android:entries="@array/children_count"
+                android:prompt="@string/children" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/roomsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rooms_label"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/adultsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adults_label"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/childrenCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/children_label"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/personal_information"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/reservation_input_field"
+            android:hint="@string/first_name" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/reservation_input_field"
+            android:hint="@string/last_name" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/reservation_input_field"
+            android:hint="@string/email" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/reservation_input_field"
+            android:hint="@string/phone" />
+
+        <TextView
+            android:id="@+id/bookButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/booking_email_button_selector"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:text="@string/book_online"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

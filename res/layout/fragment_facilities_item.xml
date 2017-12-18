@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/facilitiesCheckImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/facilities_icon_check" />
+
+    <TextView
+        android:id="@+id/facilitiesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/facilitiesCheckImageView"
+        android:gravity="left|center_vertical"
+        android:padding="12dp"
+        android:textColor="@color/text_color_gray"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_brown">#6c472c</color>
+    <color name="thirty_percent_transparent_black">#4d000000</color>
+    <color name="drawer_grey">#ebebeb</color>
+    <color name="drawer_grey_light">#f4f4f4</color>
+    <color name="rates_green">#3c7728</color>
+    <color name="rates_green_pressed">#29511b</color>
+    <color name="text_color_gray">#5e5e5e</color>
+
+</resources>

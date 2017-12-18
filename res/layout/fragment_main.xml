@@ -1,0 +1,250 @@
+
+<!-- The main content view -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mainFragmentViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/mainFragmentViewPagerBullets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="12dp" />
+
+        <ImageView
+            android:id="@+id/mainFragmentViewPagerRightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/slider_right_arrow"
+            android:padding="20dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/mainFragmentViewPagerLeftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/slider_left_arrow"
+            android:padding="20dp"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mainFragmentButtonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/main_brown" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainFragmentButtonsContainerFirstRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/mainFragmentButtonsContainerFirstRowReservationButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/brown_border_right_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/reservationButtonImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/home_reservation" />
+
+                <TextView
+                    android:id="@+id/reservationButtonTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reservationButtonImageView"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/reservation"
+                    android:textColor="@color/main_brown"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainFragmentButtonsContainerFirstRowRoomsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/brown_border_left_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/roomsButtonImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/home_rooms" />
+
+                <TextView
+                    android:id="@+id/roomsButtonTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/roomsButtonImageView"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/rooms"
+                    android:textColor="@color/main_brown"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainFragmentButtonsContainerSecondRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/mainFragmentButtonsContainerSecondRowRatesButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/brown_border_right_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/ratesButtonImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/home_rates" />
+
+                <TextView
+                    android:id="@+id/ratesButtonTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ratesButtonImageView"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/rates"
+                    android:textColor="@color/main_brown"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainFragmentButtonsContainerSecondRowFacilitiesButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/brown_border_left_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/facilitiesButtonImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/home_facilities" />
+
+                <TextView
+                    android:id="@+id/facilitiesButtonTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/facilitiesButtonImageView"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/facilities"
+                    android:textColor="@color/main_brown"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainFragmentButtonsContainerThirdRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/mainFragmentButtonsContainerThirdRowGalleryButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/brown_border_right_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/galleryButtonImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/home_gallery" />
+
+                <TextView
+                    android:id="@+id/galleryButtonTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/galleryButtonImageView"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/gallery"
+                    android:textColor="@color/main_brown"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mainFragmentButtonsContainerThirdRowLocationsButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/brown_border_left_bottom"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/locationsButtonImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/home_location" />
+
+                <TextView
+                    android:id="@+id/locationsButtonTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/locationsButtonImageView"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/location"
+                    android:textColor="@color/main_brown"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

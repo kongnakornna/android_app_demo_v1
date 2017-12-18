@@ -1,0 +1,36 @@
+
+<!-- The main content view -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:id="@+id/reservationFragmentTopLogoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/reservationFragmentTopLogoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reservation_hotel_logo" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/reservationFragmentListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp" >
+    </ListView>
+
+</LinearLayout>
