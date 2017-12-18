@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Android Hotel App Documentation version 1.2</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+
+    <!-- Jquery -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- Syntax Highlighter -->
+    <script type="text/javascript" src="js/shCore.js"></script>
+    <script type="text/javascript" src="js/shBrushXml.js"></script>
+    <script type="text/javascript" src="js/shBrushJava.js"></script>
+
+    <!-- Syntax Highlighter Styles-->
+    <link href="css/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css" media="screen">
+        p,
+        table,
+        hr,
+        .box {
+            margin-bottom: 25px;
+        }
+        .box p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h3 class="center alt">&ldquo;Android Hotel App&rdquo; Documentation by &ldquo;dmb TEAM&rdquo; v1.2</h3>
+
+        <hr>
+
+        <h1 class="center">&ldquo; Hotel App &rdquo;</h1>
+
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+					Created: 30.04.2014<br>
+                    Updated: 22.01.2015<br>
+					By: dmb TEAM<br>
+					Website: <a href="http://dmb-team.com" target="_blank">www.dmb-TEAM.com</a><br>
+					Email: <a href="mailto:dmbteamdev@gmail.com">dmbteamdev@gmail.com</a>
+					</strong>
+                </p>
+            </div>
+            <!-- end div .span-6 -->
+
+            <div class="span-12 last">
+                <p class="prepend-top append-0">Thank you for purchasing Android Hotel App. If you have any questions that are beyond the scope of this help file, please feel free to email us via our user's page contact form <a href="http://codecanyon.net/user/dmbTeam" target="_blank">here</a>. Thanks so much!</p>
+            </div>
+        </div>
+        <!-- end div .borderTop -->
+
+        <hr>
+
+        <h2 id="toc" class="alt">Table of Contents</h2>
+        <h3>I. Project Contents</h3>
+        <ol>
+            <li><a href="#javaSources">Java Sources</a>
+            </li>
+        </ol>
+        <h3>II. How to configure the available projects in your workspace</h3>
+        <ol>
+            <li><a href="#import">Import the projects into Eclipse</a>
+            </li>
+            <li><a href="#supportlib">Support Library</a>
+            </li>
+        </ol>
+        <h3>III. How to Customize "Android Hotel App"</h3>
+        <ol>
+            <li><a href="#splash">Customize the information displayed within the application</a>
+            </li>
+            <ul>
+                <li><a href="#onlinexml">Online XML file</a>
+                </li>
+                <li><a href="#offlinexml">Local (Offline) XML file</a>
+                </li>
+                <li><a href="#xmlstruct">Customize the XML file</a>
+                </li>
+                <li><a href="#reservationForm">Online or Internal Reservation Form</a>
+                </li>
+            </ul>
+        </ol>
+        <h3>IV. Useful tutorials / FAQs</h3>
+        <ol>
+            <li><a href="#whattools">What tools do I need to customize the product?</a>
+            </li>
+            <li><a href="#changepackagename">How can I change the package name?</a>
+            </li>
+            <li><a href="#publishplaystore">How Can I publish .apk to Google Play Store?</a>
+            </li>
+        </ol>
+        <hr>
+
+        <h3 id="javaSources"><strong>1. Java Sources</strong> - <a href="#toc">top</a></h3>
+        <h3>Package "com.dmbteam.hotelapp"</h3>
+        <ul>
+            <li><strong>ObtainApplicationDataActivity.java</strong> - This is the <code>Start</code> point of the application where the initial XML parsing is done</li>
+
+            <li><strong>MainActivity.java</strong> - This is the main activity, holding the screen fragments;</li>
+
+            <li><strong>ApplicationContext.java</strong> - This is the application context holding the parsed data structure;</li>
+        </ul>
+
+        <h3>Package "com.dmbteam.hotelapp.adapters"</h3>
+        <ul>
+            <li><strong>DrawerListMenuAdapter.java</strong> - This is the adapter used for the left menu ListView</li>
+            <li><strong>FacilitiesListItemAdapter.java</strong> - This is the adapter used for the Facilities screen ListView</li>
+            <li><strong>GalleryListAdapter.java</strong> - This is the adapter used for the Gallery screen ListView</li>
+            <li><strong>HomeFragmentViewPagerAdapter.java</strong> - This is the adapter used for the ViewPager on the Main screen top part</li>
+            <li><strong>PhotosPreviewPagerAdapter.java</strong> - This is the adapter used for the ViewPager on the PhotosPreview screen</li>
+            <li><strong>RatesListAdapter.java</strong> - This is the adapter used for the Rates screen ListView</li>
+            <li><strong>ReservationListItemAdapter.java</strong> - This is the adapter used for the Reservation screen ListView</li>
+            <li><strong>RoomsListAdapter.java</strong> - This is the adapter used for the Rooms screen ListView</li>
+
+        </ul>
+
+        <h3>Package "com.dmbteam.hotelapp.adapters.fragments"</h3>
+        <ul>
+            <li><strong>FacilitiesFragment.java</strong> - This class represents the Facilities screen</li>
+            <li><strong>FooterBarFragment.java</strong> - This class represents the bar at the bottom of the screen containing social network links</li>
+            <li><strong>GalleryFragment.java</strong> - This class represents the Gallery screen</li>
+            <li><strong>HomeFragment.java</strong> - This class represents the Main home screen</li>
+            <li><strong>LocationsFragment.java</strong> - This class represents the Locations screen</li>
+            <li><strong>NavigationBarFragment.java</strong> - This class represents the bar at the top of the screen containing menu button and send email button</li>
+            <li><strong>PhotosPreviewFragment.java</strong> - This class represents the PhotosPreview screen opened when a gallery item is clicked</li>
+            <li><strong>RatesFragment.java</strong> - This class represents the Rates screen</li>
+            <li><strong>ReservationFragment.java</strong> - This class represents the Reservation screen</li>
+            <li><strong>RoomsFragment.java</strong> - This class represents the Rooms screen</li>
+        </ul>
+
+        <h3>Package "com.dmbteam.hotelapp.adapters.models"</h3>
+        <ul>
+            <li><strong>CommonApplicationSettings.java</strong> - Represents data common for most screens of the application.</li>
+            <li><strong>RoomsPageSettings.java</strong> - Represents data for Room screen.</li>
+            <li><strong>DrawerListMenuItem.java</strong> - Represents structure for the left drawer menu list item.</li>
+            <li><strong>FacilitiesPageSettings.java</strong> - Represents data for Facilities screen.</li>
+            <li><strong>FacilityItem.java</strong> - Represents structure for the Facilities screen ListView item.</li>
+            <li><strong>GalleryPageSettings.java</strong> - Represents data for Gallery screen.</li>
+            <li><strong>HotelItem.java</strong> - Represents structure for Location screen items.</li>
+            <li><strong>HotelItemLocation.java</strong> - Represents structure for Location screen items hotel location. Holds latitude and longtitude info</li>
+            <li><strong>HotelReservationContactItem.java</strong> - Represents structure for Reservation screen items.</li>
+            <li><strong>LocationsPageSettings.java</strong> - Represents data for Locations screen.</li>
+            <li><strong>MainHotelItem.java</strong> - Represents structure for Location screen main hotel item.</li>
+            <li><strong>MainPageSettings.java</strong> - Represents data for Main home screen.</li>
+            <li><strong>ParsedApplicationSettings.java</strong> - Represents data holding all screen XML parsed info.</li>
+            <li><strong>PreviewPictureItem.java</strong> - Represents structure for Gallery and PreviewPicture screens.</li>
+            <li><strong>RatesPageSettings.java</strong> - Represents data for Rates screen.</li>
+            <li><strong>ReservationPageSettings.java</strong> - Represents data for Reservation screen.</li>
+            <li><strong>MainPageSettings.java</strong> - Represent data for Main home screen.</li>
+            <li><strong>RoomItem.java</strong> - Represent structure for Rooms screen item.</li>
+            <li><strong>RoomRatesItem.java</strong> - Represent structure for RoomRates screen item.</li>
+            <li><strong>RoomsPageSettings.java</strong> - Represent data for Rooms screen.</li>
+        </ul>
+
+        <h3>Package "com.dmbteam.hotelapp.adapters.utils"</h3>
+        <ul>
+            <li><strong>HotelXMLTagConstants.java</strong> - This is cell for menu in home screen.</li>
+            <li><strong>SettingsXMLParser.java</strong> - This is cell for slider in home screen.</li>
+        </ul>
+
+        <h3>Package "com.dmbteam.hotelapp.adapters.utils"</h3>
+        <ul>
+            <li><strong>HotelXMLTagConstants.java</strong> - This is class holding all constants for tags from the XML. You can find the online XML URL constant here also</li>
+            <li><strong>SettingsXMLParser.java</strong> - This is responsible for parsing the XML file and filling the data models.</li>
+        </ul>
+        <hr>
+        <h3>II. How to configure the available projects in your workspace</h3>
+        <h3 id="import"><strong>1. Import the project into Eclipse</strong> - <a href="#toc">top</a></h3>
+
+        <p><strong>Step 1:</strong> Extract the .zip file that you just downloaded and after that extract the content of the .zip file that is in fact the app (e.g. dmbteam_android_hotel_app_v***.zip). After that create new folder and name it <em>workspace</em>. Start Eclipe and click on File > Switch Workspace > Other and locate the <em>workspace</em> folder that you created and click OK.</p>
+        <p>
+            <img src="assets/images/locate_workspace.png" alt="Locate Workspace">
+        </p>
+
+        <p><strong>Step 2:</strong> When you see the Eclipe's Welcome Screen click on File > Import > Android > Existing Android Code into Workspace and click on Next:</p>
+        <p>
+            <img src="assets/images/import_existing_code.png" alt="Import into Eclipse">
+        </p>
+
+        <p><strong>Step 3:</strong> On the next step you should locate where you extracted the app's .zip file (e.g. dmbteam_android_hotel_app_v***.zip) by clicking the Browse button and then OK:</p>
+        <p>
+            <img src="assets/images/import_existing_code_2.png" alt="">
+        </p>
+
+        <p><strong>Step 4:</strong> When you click the OK button Eclipse will automatically detect the projects (4) within this folder and will give you possibility to import them. The <em>ObtainApplicationDataActivity</em> item in fact is the Hotel App. On this step, please don't forget to click the checkbox <em>Copy projects into workspace</em>. Then click Finish:</p>
+        <p>
+            <img src="assets/images/import_existing_code_3.png" alt="Finish importing">
+        </p>
+
+        <p><strong>Step 5:</strong> Close the Welcome Screen and you will see on the left side the imported projects:</p>
+        <p>
+            <img src="assets/images/eclipse_1.png" alt="Eclipse">
+        </p>
+
+        <p><strong>Step 6:</strong> Next step is to fix the libraries paths. For that purpose right click on HotelApp project and select Properties > Android and look at the Project Build Target, where you should be sure your target is set to Android 4.2.2. After that look at the Libraries section and remove all items (if you see any) by clicking on it and clicking on Remove button. Do this for all items within the Library section. Then add the libraries (image_loader_library, pinterestlikeview and view_pager_indicator_library) one by one clicking on the Add button and selecting each of the libraries. If you can't see any libraries after you click on the Add button, this means that you have to mark them as libraries. To do so right click on each of them from the Package Explorer on the left and select Properties > Android. Then click on the checkbox <em>Is Library</em>. Then go back to the <em>ObtainApplicationDataActivity (Hotel App)</em>, right click > Properties > Android and add the libraries via the Add button. The final variant should be the following:</p>
+        <p>
+            <img src="assets/images/libraries_paths.png" alt="Remove Libraries">
+        </p>
+        
+        <p><strong>Step 7:</strong> Click on OK and you are ready with the importing. It's good idea to perform clean now. Click on Project > Clean from Eclipse's top navigation and clear all projects.</p>
+
+        <h3 id="supportlib"><strong>2. Support Library</strong> - <a href="#toc">top</a></h3>
+        <li>Install the latest version of the the <i>Android Support Library</i> for each project in the workspace. To do so, right click on every project and select Android Tools -> Add Support Lirary.</li>
+        <img src="assets/images/supportlib.png" />
+        <hr />
+
+        <h3>III. How to Customize "Android Hotel App"</h3>
+        <h3 id="splash"><strong>1. Customize the information displayed within the application</strong> - <a href="#toc">top</a></h3>
+
+        <p>The application settings can be obtained by either a <strong>local</strong> file from the assets folder or an <strong>online XML file</strong> with the same structure as the provided <strong>hotel_settings.xml</strong> in the assets folder.</p>
+        <p id="onlinexml"><strong>a) Online XML File</strong>
+        </p>
+        <p>To use a file from an <strong>internet URL</strong> you should put the URL to the hosted <em>hotel_settings_web.xml</em> file in the <strong>HotelXMLTagConstants.java</strong> class under the name <strong>TAG_URL_SETTINGS</strong>
+        </p>
+        <p>Just to avoid wrong structure of the xml file, please copy the one located in assets folder and paste it somewhere in different location. After that edit this copied file and upload it to your web server.</p>
+        <h4>Example:</h4>
+        <p>public static final String <strong>TAG_URL_SETTINGS = "http://dmb-team.com/assets/hotel_settings_web.xml";</strong>
+        </p>
+        <p>
+            <img src="assets/images/online_xml.png" />
+        </p>
+
+        <p id="offlinexml"><strong>b) Local (Offline) XML File</strong>
+        </p>
+        <p>In case you want to use the <strong>local variant of</strong>  <em>hotel_settings.xml</em> file to customize the information displayed within the app leave the <strong>TAG_URL_SETTINGS</strong> empty like so:</p>
+        <p>public static final String <strong>TAG_URL_SETTINGS = "";</strong>
+        </p>
+        <p>
+            <img src="assets/images/offline_xml.png" />
+        </p>
+
+        <p id="xmlstruct"><strong>c) Customize the XML file</strong>
+        </p>
+
+        <p>Open <strong>hotel_settings.xml</strong> file from assets folder (or your copied version, which you want to upload to a web server) and fill data for your hotel. The .xml file is well documented and there are a lot of comments that will help you to understand which information where is displayed within the application.</p>
+
+        <h4>Example:</h4>
+        <p>Here the MainPageSettings element represents the information displayed on the home page.
+            <pre class="brush: xml">
+			<!-- Main page settings-->
+		    <MainPageSettings>
+		        
+		        <!-- List of Photos with Description to show on main screen ViewPager -->
+		        <HotelPreviewPictures>
+		            
+		            <PreviewPicture>
+		                
+		                <!-- Photo to display in ViewPager -->
+		                <Picture>room</Picture>
+		                
+		                <!-- Short Description for the displayed photo -->
+		                <PictureDescription>Room</PictureDescription>
+		                
+		            </PreviewPicture>            
+		        
+		            <PreviewPicture>
+		                
+		                <!-- Photo to display in ViewPager -->
+		                <Picture>cf</Picture>
+		                
+		                <!-- Short Description for the displayed photo -->
+		                <PictureDescription>Conference Room</PictureDescription>
+		                
+		            </PreviewPicture>
+		            
+		            <PreviewPicture>
+		                
+		                <!-- Photo to display in ViewPager -->
+		                <Picture>rest</Picture>
+		                
+		                <!-- Short Description for the displayed photo -->
+		                <PictureDescription>Restaurant</PictureDescription>
+		                
+		            </PreviewPicture>
+		           
+		            
+		            <PreviewPicture>
+		                
+		                <!-- Photo to display in ViewPager -->
+		                <Picture>pool</Picture>
+		                
+		                <!-- Short Description for the displayed photo -->
+		                <PictureDescription>Swimming Pool</PictureDescription>
+		                
+		            </PreviewPicture>
+		            
+		        </HotelPreviewPictures>
+		        
+			</MainPageSettings>
+		</pre>
+            <h4>Example:</h4>
+            <p>For example the <strong>previewpicture</strong> elements represents a single image in the slider. the <strong>picture</strong> element holds the name of the images, while the <strong>picturedescription</strong> holds the picture's text.</p>
+            <pre class="brush: xml">
+			 		<PreviewPicture>
+		                
+		                <!-- Photo to display in ViewPager -->
+		                <Picture>cf</Picture>
+		                
+		                <!-- Short Description for the displayed photo -->
+		                <PictureDescription>Conference Room</PictureDescription>
+		                
+		            </PreviewPicture>
+		        </pre>
+            <hr>
+            <p>The other elements in <strong>hotel_settings.xml</strong> file are organized in the same way. Read carefully the comments that we've placed and it won't be a problem to understand the idea.</p>
+            <p id="reservationForm"><strong>d) Online or Internal Reservation Form</strong>
+            </p>
+            <p>You have the option to use two types of reservation forms:</p>
+            <ol>
+                <li>Your own reservation form (external for the app) located on your website.</li>
+                <li>Internal reservation form with the following fields: Check-In, Check-Out, Rooms, Adults, Kids, First Name, Last Name, Email and Phone.</li>
+            </ol>
+            <p><strong>1. Own reservation form (external for the app) located on your website:</strong>
+            </p>
+            <p>If you want to use your own reservation form you just need to add the url to your reservation form in <em>hotel_settings.xml</em>. Search for element:</p>
+            <h4>Example:</h4>
+            <pre class="brush: xml">
+                <!-- Online booking webpage address e.g. www.johnsmith.com/book -->
+                <BookOnlinePageUrl>http://dmb-team.com</BookOnlinePageUrl>
+        </pre>
+            <p>If you use external reservation form, when the user clicks on the button <strong>Book Now</strong> within the <strong>Reservation Screen</strong>, he/she will be redirected to a browser where your external form will be loaded.</p>
+            <p><strong>2. Internal reservation form:</strong>
+            </p>
+            <p>If you want to use internal reservation form provided by our app you have to leave empty the following element within the <em>hotel_settings.xml</em> file:</p>
+            <h4>Example:</h4>
+            <pre class="brush: xml">
+                <!-- Online booking webpage address e.g. www.johnsmith.com/book -->
+                <BookOnlinePageUrl></BookOnlinePageUrl>
+        </pre>
+            <p>If the <strong>BookOnlinePageUrl</strong> element is empty the app will automatically display the internal reservation form. This form includes the following fields: Check-In, Check-Out, Rooms, Adults, Kids, First Name, Last Name, Email and Phone. Please note that when the user have already filled the data in the internal reservation form he/she has to click on a button with name <strong>Book Now.</strong> After clicking the button the app will load the user's email client and will fill the email's content with the filled data. This way the user can send the needed information to your email address, which you have set in <em>hotel_settings.xml</em> file within the <em>ReservationPageSettings</em>
+                element:
+            </p>
+            <h4>Example:</h4>
+            <pre class="brush: xml">
+            <!-- Email to contact e.g. john@smith.com -->
+                <ContactEmail>n@dhotel.com</ContactEmail>
+        </pre>
+            <hr>
+            <h3>IV. How to Customize "Android Hotel App"</h3>
+            <h3 id="whattools"><strong>1. What tools do I need to customize the product?</strong> - <a href="#toc">top</a></h3>
+            <p>
+                In order to set up and customize the product you need Eclipe and ADT Plugin.
+            </p>
+            <h3 id="changepackagename"><strong>2. How can I change the package name?</strong> - <a href="#toc">top</a></h3>
+            <p>
+                The project comes with our default packages names and if you want to upload the app to Play Store you should change them, because those packages names have to be unique. It's not a trivial task and a lot of things could went wrong and because of that fact, we prepared a nice step-by-step tutorial how to do it. Just click <a href="http://movivations.wordpress.com/2012/04/27/change-package-name-in-android-motodev-eclipse/" target="_blank">here</a> and follow the steps.
+            </p>
+            <h3 id="publishplaystore"><strong>3. How Can I publish .apk to Google Play Store?</strong> - <a href="#toc">top</a></h3>
+            <p>
+                When you have already set up, customized and changed the packages names you are ready to publish your app to Google Play Store. We perfectly know that a lot of people are performing such step for first time and that's why we decided to provide you a step-by-step tutorial to guide you throughout the process. Just visit <a href="http://www.tutorialspoint.com/android/android_publishing_application.htm" target="_blank">this page</a> and follow the steps. Of course accross the web there are a lot more tutorials so you can always check out for more, if you think this one is not enough descriptive. At least it will be a step forward.
+            </p>
+            <p class="append-bottom alt large"><strong>"Android Hotel App" by dmb TEAM</strong>
+            </p>
+            <p><a href="#toc">Go To Table of Contents</a>
+            </p>
+
+            <hr class="space">
+    </div>
+    <!-- end div .container -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Here we start SyntaxHighlighter
+            SyntaxHighlighter.all()
+        });
+    </script>
+</body>
+
+</html>
